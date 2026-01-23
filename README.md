@@ -215,3 +215,5 @@ Rollback is best-effort and restores settings recorded at runtime.
 ## Disclaimer
 
 These scripts modify system configuration and services. Use only on systems you own or administer. No warranty is provided.
+
+![image](https://github.com/user-attachments/assets/8db1fd4b-a9b4-40ea-b9c8-da9646abdbda)
