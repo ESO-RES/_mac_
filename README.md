@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/7f9ddf93-990a-4c70-a636-9cd4fffa2be9)
 
-UPDATED:1/23/2026
+UPDATED:1/25/2026
 
 Two root-required utilities for macOS security hardening:
 
