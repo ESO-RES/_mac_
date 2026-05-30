@@ -124,6 +124,30 @@ echo "Installing PF hardening…"
 # ---- Write anchor ----
 cat > "${ANCHOR_PATH}.tmp" <<'EOF'
 # macOS hardened baseline PF anchor
+# ================================================================
+#
+# This anchor is managed by the mac-harden-pf installer.
+#
+# EXT_IF and LOGIN_USER are accepted as command-line options:
+#   --ext-if      : external interface (e.g. en0, en1, utun*)
+#   --login-user  : username of the logged-in console user
+#
+# They are currently optional for the basic “default-deny inbound,
+# stateful outbound” policy, but you can easily extend the rules
+# below to make them active:
+#
+#   • Scope rules to the external interface:
+#       pass in  on $EXT_IF ...
+#       pass out on $EXT_IF ...
+#
+#   • Restrict certain rules to the logged-in user only:
+#       user "${LOGIN_USER}" ...
+#       (useful for per-user VPN, file sharing, etc.)
+#
+#   • Example usage when calling the script:
+#       sudo ./harden-pf.sh install --ext-if en0 --login-user user1
+#
+# ================================================================
 
 set block-policy drop
 set skip on lo0
