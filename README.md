@@ -4,6 +4,7 @@ UPDATED:5/30/2026
 
 Two root-required utilities for macOS security hardening:
 
+- **ipRange.zsh** — Fast parallel IP-range ping sweep (default 64× concurrency) with strict safety limits, using native BSD ping + xargs (lab/observability utility).
 - **pfFW.sh** – Installs and manages a hardened Packet Filter (PF) firewall baseline using a dedicated PF anchor and a LaunchDaemon.
 - **macSrvOff.sh** – Disables common macOS sharing services and network advertising features with automatic backups, logs, and rollback support.
 
